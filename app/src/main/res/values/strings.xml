@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Location Test</string>
+    <string name="task_one_complete">Task 1 is complete!</string>
+    <string name="hello_world">Hello World!</string>
 </resources>
