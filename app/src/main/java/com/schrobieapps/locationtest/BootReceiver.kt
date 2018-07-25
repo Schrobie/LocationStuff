@@ -12,7 +12,7 @@ class BootReceiver: BroadcastReceiver() {
         if (Intent.ACTION_BOOT_COMPLETED.equals(intent!!.action)) {
             Log.d("broadcastReceiver", "received boot")
             if (context == null || Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
-                //we handle lollipop with the job scheduler
+                //we handle lollipop and above with the job scheduler
                 return
             }
             Utils.setPreLollipopAlarm(context)

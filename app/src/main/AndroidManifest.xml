@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.schrobieapps.locationtest">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
@@ -23,6 +24,10 @@
             android:name=".FindLastLocationService"
             android:exported="false"
             android:permission="android.permission.BIND_JOB_SERVICE" />
+        
+        <service
+            android:name=".BelowLollipopLocationService"
+            android:exported="false" />
 
         <receiver android:name=".BootReceiver">
             <intent-filter>

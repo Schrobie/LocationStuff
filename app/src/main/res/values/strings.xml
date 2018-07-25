@@ -2,4 +2,7 @@
     <string name="app_name">Location Test</string>
     <string name="task_one_complete">Task 1 is complete!</string>
     <string name="hello_world">Hello World!</string>
+    <string name="permission_title">Permission</string>
+    <string name="permission_text">To use this feature this permission must be granted.</string>
+    <string name="ok">ok</string>
 </resources>
